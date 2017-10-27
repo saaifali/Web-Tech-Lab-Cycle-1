@@ -14,21 +14,21 @@
             var atpos = a.indexOf("@");
             var dotpos = a.lastIndexOf(".");
             if (len < 6 || x == '' || x == null) {
-                alert("check your username! must be minimum 6 characters");
+                alert("Check your username! It must be a minimum of 6 characters.");
                 if (val < 65 || val > 90 && val < 97 || val > 122)
-                    alert("username must begin with an alphabet");
+                    alert("Username must begin with an alphabet.");
                 return false;
             } else if (val < 65 || val > 90 && val < 97 || val > 122) {
-                alert("username must begin with an alphabet");
+                alert("Username must begin with an alphabet.");
                 return false;
             } else if (p == '' || c == '' || p.length < 6 || c.length < 6 || p != c) {
-                alert("Password and Confirm Password should be same and greater than 6 characters!");
+                alert("Password did no match and/or  should be greater than 6 characters!");
                 return false;
             } else if (atpos < 6 || dotpos < atpos + 6 || dotpos + 2 >= a.length) {
-                alert("Not a valid email id");
+                alert("Not a valid email id!");
                 return false;
             } else
-                alert("Congragulations! you have submited successfully");
+                alert("Congragulations! Your form has been submitted successfully!");
         }
     </script>
 </head>
@@ -38,19 +38,19 @@
     <table align=center border=1>
         <form name="f" action="success.html" onsubmit="return validation();" method="post">
             <tr>
-                <td>User Name:</td>
+                <td>User Name :</td>
                 <td><input type="text" name="un" /></td>
             </tr>
             <tr>
-                <td>Password:</td>
+                <td>Password :</td>
                 <td><input type="password" name="pw" /></td>
             </tr>
             <tr>
-                <td>Confirm Password:</td>
+                <td>Confirm Password :</td>
                 <td><input type="password" name="cpw" /></td>
             </tr>
             <tr>
-                <td>E-mail ID:</td>
+                <td>E-mail ID :</td>
                 <td><input type="text" name="email" /></td>
             </tr>
             <tr>
